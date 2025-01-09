@@ -1,0 +1,103 @@
+* {
+    padding:0;
+    margin:0;
+    font-family: 'Quicksand',sans-serif;
+}
+body {
+    background-color: rgb(255, 255, 255);
+}
+* {
+    color: inherit;
+    text-decoration: none;
+}
+#bg-login {
+    display:flex;
+    height: 100vh;
+    justify-content: center;
+    align-items: center;
+}
+header {
+    background-color: palevioletred;
+    color: rgb(255, 255, 255);
+}
+header h1 {
+    float: left;
+    padding: 10px;
+}
+header ul {
+    float: right;
+}
+header ul li {
+    display: inline-block;
+
+}
+header ul li a {
+    padding:20px  0 20px 15px;
+    display: inline-block;
+}
+.container {
+    width: 80%;
+    margin:0 auto;
+}
+.container:after {
+    content: '';
+    display: block;
+    clear: both;
+}
+.section {
+    padding:25px  0;
+ 
+}
+.box {
+    background-color: white;
+    border:1px solid #ccc;
+    padding:15px ;
+    box-sizing: border-box;
+    margin:10px 0;
+}
+.table {
+    width: 100%;
+    border-collapse: collapse;
+    
+}
+.table tr {
+    height: 30px;
+}
+.table tr td {
+    padding:5px ;
+}
+.table thead th {
+    background-color: pink;
+    padding: 10px;
+}
+center a {
+    background-color: rgb(157, 86, 98);
+    color: white;
+    padding: 10px;
+    font-size: 12px;
+    text-decoration: none;
+}
+.box {
+    background-color: white;
+    border:1px solid #ccc;
+    padding:15px ;
+    box-sizing: border-box;
+    margin:10px 0;
+} 
+.form {
+    width: 300px;
+            min-height: 200px;
+            border: 1px solid white;
+            background-color: white;
+            padding: 15px;
+            box-sizing: border-box;
+}
+.label {
+    padding:0;
+    margin:0;
+    font-family: 'Quicksand',sans-serif; 
+}
+.header h2 {
+    background-color: palevioletred;
+    color: rgb(255, 255, 255);
+}
