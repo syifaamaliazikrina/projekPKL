@@ -73,7 +73,7 @@
     --shadow-lg: var(--box-shadow-lg);
 }
 
-/* ===== RESET & BASE STYLES ===== */
+/*  RESET & BASE STYLES  */
 * {
     margin: 0;
     padding: 0;
@@ -345,7 +345,7 @@ nav ul li a.active {
     border-radius: var(--border-radius-lg);
 }
 
-/* ===== FEATURED PRODUCTS ===== */
+/*  FEATURED PRODUCTS  */
 .featured-products {
     padding: 80px 0;
     text-align: center;
@@ -443,7 +443,7 @@ nav ul li a.active {
     transition: var(--transition);
 }
 
-/* ===== WHY US SECTION ===== */
+/*  WHY US SECTION  */
 .why-us {
     padding: 80px 0;
     background-color: #F9F9F9;
@@ -507,7 +507,7 @@ nav ul li a.active {
     color: var(--text-muted);
 }
 
-/* ===== ABOUT US SECTION ===== */
+/*  ABOUT US SECTION  */
 .about-us {
     padding: 80px 0;
     text-align: center;
@@ -567,7 +567,7 @@ nav ul li a.active {
     color: var(--text-dark);
 }
 
-/* ===== FEEDBACK SECTION ===== */
+/*  FEEDBACK SECTION  */
 .feedback {
     padding: 60px 0;
     background-color: #E8F5E9;
@@ -610,7 +610,7 @@ nav ul li a.active {
     cursor: pointer;
 }
 
-/* ===== FOOTER ===== */
+/*  FOOTER  */
 footer {
     background-color: var(--light-bg);
     color: var(--dark-color);
@@ -768,7 +768,7 @@ footer {
     transform: scale(1.1);
 }
 
-/* ===== PRODUCT DETAIL PAGE ===== */
+/*  PRODUCT DETAIL PAGE  */
 .product-detail {
     padding: 60px 0;
     background-color: var(--light-color);
@@ -1083,7 +1083,7 @@ footer {
     background-color: var(--primary-color);
 }
 
-/* ===== CART PAGE ===== */
+/*  CART PAGE  */
 .cart-section {
     padding: 60px 0;
     background-color: var(--light-color);
@@ -1362,7 +1362,7 @@ footer {
     margin-right: 8px;
 }
 
-/* ===== FOOTER ===== */
+/*  FOOTER  */
 footer {
     background-color: var(--light-bg);
     color: var(--dark-color);
@@ -1530,7 +1530,7 @@ footer {
     }
 }
 
-/* ===== AUTH PAGES (LOGIN/REGISTER) ===== */
+/*  AUTH PAGES (LOGIN/REGISTER)  */
 .auth-section {
     padding: 80px 0;
     background-color: #F9F9F9;
@@ -1975,7 +1975,7 @@ input[type="radio"]:checked + .payment-label {
     color: var(--dark-color);
 }
 
-/* ===== RECEIPT PAGE ===== */
+/*  RECEIPT PAGE  */
 .receipt-section {
     padding: 60px 0;
     background-color: var(--light-color);
@@ -2198,7 +2198,7 @@ input[type="radio"]:checked + .payment-label {
     gap: 15px;
 }
 
-/* ===== CONFIRMATION PAGE ===== */
+/*  CONFIRMATION PAGE  */
 .confirmation-section {
     padding: 60px 0;
     background-color: var(--light-color);
@@ -2818,7 +2818,7 @@ input[type="radio"]:checked + .payment-label {
     }
 }
 
-/* ===== ANIMATIONS ===== */
+/*  ANIMATIONS  */
 @keyframes fadeIn {
     from {
         opacity: 0;
@@ -2847,7 +2847,7 @@ input[type="radio"]:checked + .payment-label {
     animation: slideUp 0.5s ease;
 }
 
-/* ===== TOAST NOTIFICATIONS ===== */
+/*  TOAST NOTIFICATIONS  */
 .toast {
     position: fixed;
     bottom: 20px;
@@ -3406,7 +3406,7 @@ footer {
     color: var(--primary-color);
 }
 
-/* ===== 8. PROFILE PAGES ===== */
+/*  8. PROFILE PAGES  */
 .profile-section {
     padding: var(--space-xxl) 0;
     background-color: var(--light-color);
@@ -4072,7 +4072,7 @@ footer {
     margin-right: var(--space-sm);
 }
 
-/* ===== 10. CHECKOUT PAGES ===== */
+/*  10. CHECKOUT PAGES  */
 .checkout-section {
     padding: var(--space-xxl) 0;
 }
@@ -4348,7 +4348,7 @@ footer {
     color: var(--light-color);
 }
 
-/* ===== 11. ORDER RECEIPT ===== */
+/*  11. ORDER RECEIPT  */
 .receipt-section {
     padding: var(--space-xxl) 0;
 }
@@ -4600,7 +4600,7 @@ footer {
     color: var(--primary-color);
 }
 
-/* ===== 12. FOOTER ===== */
+/*  12. FOOTER  */
 footer {
     background-color: var(--light-bg);
     padding: var(--space-xl) 0 var(--space-md);
@@ -4666,7 +4666,7 @@ footer {
     margin-bottom: 0;
 }
 
-/* ===== 13. RESPONSIVE STYLES ===== */
+/*  13. RESPONSIVE STYLES  */
 @media (max-width: 1200px) {
     .container {
         max-width: 992px;
@@ -5309,9 +5309,7 @@ body.auth-page {
     text-decoration: underline;
 }
 
-/*=============================================
-=            6. RESPONSIVE STYLES            =
-=============================================*/
+/* responsive style */
 /* Responsive Styles for Auth Pages */
 @media (max-width: 900px) {
     .auth-container {
