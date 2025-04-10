@@ -1,0 +1,653 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Detail Produk - TOKO TANAMAN</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">
+                <a href="index.html">
+                    <img src="images/logo.png" alt="TOKO TANAMAN">
+                </a>
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="index.html">BERANDA</a></li>
+                    <li><a href="produk.html" class="active">PRODUK</a></li>
+                    <li><a href="#">KONTAK</a></li>
+                </ul>
+            </nav>
+            <div class="icons">
+                <a href="keranjang.html"><i class="fas fa-shopping-cart"></i></a>
+                <a href="login.html"><i class="fas fa-user"></i></a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Breadcrumb -->
+    <div class="breadcrumb-container">
+        <div class="container">
+            <ul class="breadcrumb">
+                <li><a href="index.html">BERANDA</a></li>
+                <li><a href="produk.html">PRODUK</a></li>
+                <li>Monstera Deliciosa</li>
+            </ul>
+        </div>
+    </div>
+
+    <!-- Product Detail Section -->
+    <section class="product-detail-section">
+        <div class="container">
+            <div class="product-detail-container">
+                <!-- Product Images -->
+                <div class="product-images">
+                    <div class="product-main-image">
+                        <img src="images/daun1.jpg" alt="Monstera Deliciosa" id="main-product-image">
+                    </div>
+                    <div class="product-thumbnails">
+                        <div class="thumbnail active" data-image="images/monstera.jpg">
+                            <img src="images/daun1.jpg" alt="Monstera Deliciosa">
+                        </div>
+                        <div class="thumbnail" data-image="images/monstera-2.jpg">
+                            <img src="images/daun1.jpg" alt="Monstera Deliciosa">
+                        </div>
+                        <div class="thumbnail" data-image="images/monstera-3.jpg">
+                            <img src="images/daun1.jpg" alt="Monstera Deliciosa">
+                        </div>
+                        <div class="thumbnail" data-image="images/monstera-4.jpg">
+                            <img src="images/daun1.jpg" alt="Monstera Deliciosa">
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Product Info -->
+                <div class="product-info">
+                    <h1 class="product-title">Monstera Deliciosa</h1>
+                    <div class="product-rating">
+                        <div class="stars">
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star"></i>
+                            <i class="fas fa-star-half-alt"></i>
+                        </div>
+                        <span class="rating-count">(24 ulasan)</span>
+                    </div>
+                    <div class="product-price">
+                        <span class="current-price">Rp 250.000</span>
+                        <span class="old-price">Rp 300.000</span>
+                        <span class="discount-badge">-17%</span>
+                    </div>
+                    <div class="product-availability in-stock">
+                        <i class="fas fa-check-circle"></i> Stok tersedia
+                    </div>
+                    <div class="product-description">
+                        <p>Monstera Deliciosa atau Swiss Cheese Plant adalah tanaman hias populer dengan daun besar berlubang yang unik. Tanaman ini mudah dirawat dan cocok untuk ruangan dengan cahaya tidak langsung.</p>
+                    </div>
+                    
+                    <div class="product-options">
+                        <div class="option-group">
+                            <label class="option-label">Ukuran:</label>
+                            <div class="option-buttons">
+                                <button class="option-button">Kecil</button>
+                                <button class="option-button active">Sedang</button>
+                                <button class="option-button">Besar</button>
+                            </div>
+                        </div>
+                        
+                        <div class="option-group">
+                            <label class="option-label">Pot:</label>
+                            <div class="option-buttons">
+                                <button class="option-button">Plastik</button>
+                                <button class="option-button active">Keramik</button>
+                                <button class="option-button">Anyaman</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-actions">
+                        <div class="quantity-control">
+                            <button class="quantity-btn" id="decrease-quantity">-</button>
+                            <input type="number" id="quantity" value="1" min="1" max="10">
+                            <button class="quantity-btn" id="increase-quantity">+</button>
+                        </div>
+                        <button class="add-to-cart-btn">
+                            <i class="fas fa-shopping-cart"></i> Tambahkan ke Keranjang
+                        </button>
+                        <button class="wishlist-btn">
+                            <i class="far fa-heart"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="product-meta">
+                        <div class="meta-item">
+                            <span class="meta-label">SKU:</span>
+                            <span class="meta-value">MONS-DEL-001</span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Kategori:</span>
+                            <span class="meta-value"><a href="#">Tanaman Indoor</a></span>
+                        </div>
+                        <div class="meta-item">
+                            <span class="meta-label">Tag:</span>
+                            <span class="meta-value">
+                                <a href="#">Monstera</a>,
+                                <a href="#">Tanaman Hias</a>,
+                                <a href="#">Daun Besar</a>
+                            </span>
+                        </div>
+                    </div>
+                    
+                    <div class="product-share">
+                        <span class="share-label">Bagikan:</span>
+                        <div class="share-buttons">
+                            <a href="#" class="share-btn facebook"><i class="fab fa-facebook-f"></i></a>
+                            <a href="#" class="share-btn twitter"><i class="fab fa-twitter"></i></a>
+                            <a href="#" class="share-btn instagram"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="share-btn whatsapp"><i class="fab fa-whatsapp"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Product Tabs -->
+            <div class="product-tabs">
+                <div class="tabs-header">
+                    <button class="tab-btn active" data-tab="description">Deskripsi</button>
+                    <button class="tab-btn" data-tab="specifications">Spesifikasi</button>
+                    <button class="tab-btn" data-tab="care">Perawatan</button>
+                    <button class="tab-btn" data-tab="reviews">Ulasan (24)</button>
+                </div>
+                
+                <div class="tabs-content">
+                    <div class="tab-panel active" id="description">
+                        <h3>Deskripsi Produk</h3>
+                        <p>Monstera Deliciosa, juga dikenal sebagai Swiss Cheese Plant, adalah tanaman hias tropis yang populer dengan daun besar berbentuk hati yang berkembang menjadi pola berlubang dan bercelah yang unik saat tanaman matang.</p>
+                        <p>Tanaman ini berasal dari hutan hujan Amerika Tengah dan terkenal karena kemampuannya untuk tumbuh dengan cepat dan mudah beradaptasi dengan kondisi dalam ruangan. Monstera Deliciosa dapat tumbuh hingga ketinggian yang mengesankan dan menjadi focal point yang dramatis di ruang mana pun.</p>
+                        <p>Tanaman ini relatif mudah dirawat, menjadikannya pilihan yang bagus untuk pemula. Monstera menyukai cahaya tidak langsung yang terang dan penyiraman moderat, memungkinkan tanah mengering sedikit di antara penyiraman.</p>
+                        <h4>Fitur Utama:</h4>
+                        <ul>
+                            <li>Daun besar dengan pola berlubang yang unik</li>
+                            <li>Tanaman indoor yang mudah dirawat</li>
+                            <li>Tumbuh dengan cepat dalam kondisi yang tepat</li>
+                            <li>Efektif membersihkan udara</li>
+                            <li>Menambah sentuhan tropis ke ruangan apa pun</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="tab-panel" id="specifications">
+                        <h3>Spesifikasi Produk</h3>
+                        <table class="specs-table">
+                            <tr>
+                                <th>Nama Ilmiah</th>
+                                <td>Monstera Deliciosa</td>
+                            </tr>
+                            <tr>
+                                <th>Nama Umum</th>
+                                <td>Swiss Cheese Plant, Split-leaf Philodendron</td>
+                            </tr>
+                            <tr>
+                                <th>Asal</th>
+                                <td>Amerika Tengah</td>
+                            </tr>
+                            <tr>
+                                <th>Tinggi Tanaman</th>
+                                <td>60-80 cm (ukuran sedang)</td>
+                            </tr>
+                            <tr>
+                                <th>Diameter Pot</th>
+                                <td>20 cm</td>
+                            </tr>
+                            <tr>
+                                <th>Material Pot</th>
+                                <td>Keramik</td>
+                            </tr>
+                            <tr>
+                                <th>Kebutuhan Cahaya</th>
+                                <td>Cahaya tidak langsung sedang hingga terang</td>
+                            </tr>
+                            <tr>
+                                <th>Frekuensi Penyiraman</th>
+                                <td>Sekali seminggu, biarkan tanah mengering di antara penyiraman</td>
+                            </tr>
+                            <tr>
+                                <th>Kelembaban</th>
+                                <td>Menyukai kelembaban tinggi</td>
+                            </tr>
+                            <tr>
+                                <th>Suhu Ideal</th>
+                                <td>18-30°C</td>
+                            </tr>
+                            <tr>
+                                <th>Pupuk</th>
+                                <td>Pupuk tanaman hias seimbang setiap bulan selama musim pertumbuhan</td>
+                            </tr>
+                            <tr>
+                                <th>Tingkat Kesulitan</th>
+                                <td>Mudah, cocok untuk pemula</td>
+                            </tr>
+                        </table>
+                    </div>
+                    
+                    <div class="tab-panel" id="care">
+                        <h3>Panduan Perawatan</h3>
+                        <div class="care-instructions">
+                            <div class="care-item">
+                                <div class="care-icon">
+                                    <i class="fas fa-sun"></i>
+                                </div>
+                                <div class="care-content">
+                                    <h4>Pencahayaan</h4>
+                                    <p>Tempatkan di area dengan cahaya tidak langsung yang terang. Hindari sinar matahari langsung yang dapat membakar daun. Dapat mentolerir cahaya rendah tetapi pertumbuhan akan lebih lambat.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="care-item">
+                                <div class="care-icon">
+                                    <i class="fas fa-tint"></i>
+                                </div>
+                                <div class="care-content">
+                                    <h4>Penyiraman</h4>
+                                    <p>Siram saat lapisan atas tanah terasa kering. Biasanya sekali seminggu, tetapi sesuaikan dengan kondisi lingkungan. Kurangi penyiraman di musim dingin. Hindari tanah yang terlalu basah yang dapat menyebabkan busuk akar.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="care-item">
+                                <div class="care-icon">
+                                    <i class="fas fa-temperature-high"></i>
+                                </div>
+                                <div class="care-content">
+                                    <h4>Suhu & Kelembaban</h4>
+                                    <p>Tumbuh baik pada suhu 18-30°C. Hindari suhu di bawah 15°C dan angin dingin. Menyukai kelembaban tinggi, semprotkan daun secara teratur atau gunakan humidifier.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="care-item">
+                                <div class="care-icon">
+                                    <i class="fas fa-seedling"></i>
+                                </div>
+                                <div class="care-content">
+                                    <h4>Tanah & Pupuk</h4>
+                                    <p>Gunakan campuran tanah yang kaya, gembur, dan memiliki drainase baik. Beri pupuk tanaman hias seimbang setiap bulan selama musim pertumbuhan (musim semi dan musim panas).</p>
+                                </div>
+                            </div>
+                            
+                            <div class="care-item">
+                                <div class="care-icon">
+                                    <i class="fas fa-cut"></i>
+                                </div>
+                                <div class="care-content">
+                                    <h4>Pemangkasan & Perawatan</h4>
+                                    <p>Bersihkan daun secara teratur dengan kain lembab untuk menghilangkan debu. Pangkas daun yang menguning atau mati. Dukung batang dengan tongkat jika tanaman menjadi terlalu tinggi.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="care-item">
+                                <div class="care-icon">
+                                    <i class="fas fa-exclamation-triangle"></i>
+                                </div>
+                                <div class="care-content">
+                                    <h4>Peringatan</h4>
+                                    <p>Tanaman ini beracun jika dikonsumsi oleh hewan peliharaan dan manusia. Jauhkan dari jangkauan anak-anak dan hewan peliharaan.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="tab-panel" id="reviews">
+                        <div class="reviews-summary">
+                            <div class="average-rating">
+                                <div class="rating-number">4.5</div>
+                                <div class="rating-stars">
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star"></i>
+                                    <i class="fas fa-star-half-alt"></i>
+                                </div>
+                                <div class="rating-count">Berdasarkan 24 ulasan</div>
+                            </div>
+                            
+                            <div class="rating-bars">
+                                <div class="rating-bar-item">
+                                    <div class="rating-label">5 Bintang</div>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 75%;"></div>
+                                    </div>
+                                    <div class="rating-percent">75%</div>
+                                </div>
+                                <div class="rating-bar-item">
+                                    <div class="rating-label">4 Bintang</div>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 15%;"></div>
+                                    </div>
+                                    <div class="rating-percent">15%</div>
+                                </div>
+                                <div class="rating-bar-item">
+                                    <div class="rating-label">3 Bintang</div>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 5%;"></div>
+                                    </div>
+                                    <div class="rating-percent">5%</div>
+                                </div>
+                                <div class="rating-bar-item">
+                                    <div class="rating-label">2 Bintang</div>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 3%;"></div>
+                                    </div>
+                                    <div class="rating-percent">3%</div>
+                                </div>
+                                <div class="rating-bar-item">
+                                    <div class="rating-label">1 Bintang</div>
+                                    <div class="rating-bar">
+                                        <div class="rating-fill" style="width: 2%;"></div>
+                                    </div>
+                                    <div class="rating-percent">2%</div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="review-form-container">
+                            <h3>Tulis Ulasan</h3>
+                            <form class="review-form">
+                                <div class="form-group">
+                                    <label class="form-label">Rating</label>
+                                    <div class="rating-select">
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="review-title" class="form-label">Judul Ulasan</label>
+                                    <input type="text" id="review-title" class="form-control" placeholder="Berikan judul untuk ulasan Anda">
+                                </div>
+                                
+                                <div class="form-group">
+                                    <label for="review-content" class="form-label">Ulasan Anda</label>
+                                    <textarea id="review-content" class="form-control" rows="5" placeholder="Bagikan pengalaman Anda dengan produk ini"></textarea>
+                                </div>
+                                
+                                <div class="form-row">
+                                    <div class="form-group">
+                                        <label for="reviewer-name" class="form-label">Nama</label>
+                                        <input type="text" id="reviewer-name" class="form-control" placeholder="Masukkan nama Anda">
+                                    </div>
+                                    
+                                    <div class="form-group">
+                                        <label for="reviewer-email" class="form-label">Email</label>
+                                        <input type="email" id="reviewer-email" class="form-control" placeholder="Masukkan email Anda">
+                                    </div>
+                                </div>
+                                
+                                <div class="form-check">
+                                    <input type="checkbox" id="save-reviewer-info" class="form-check-input">
+                                    <label for="save-reviewer-info" class="form-check-label">Simpan nama dan email saya untuk ulasan berikutnya</label>
+                                </div>
+                                
+                                <button type="submit" class="btn btn-primary">Kirim Ulasan</button>
+                            </form>
+                        </div>
+                        
+                        <div class="reviews-list">
+                            <h3>Ulasan Pelanggan</h3>
+                            
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar">
+                                            <img src="images/avatar-1.jpg" alt="Avatar">
+                                        </div>
+                                        <div class="reviewer-details">
+                                            <div class="reviewer-name">Budi Santoso</div>
+                                            <div class="review-date">12 Mei 2023</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-title">Tanaman yang sangat sehat!</div>
+                                <div class="review-content">
+                                    <p>Saya sangat senang dengan Monstera yang saya beli. Tanaman datang dalam kondisi sangat sehat dengan daun yang indah. Pengiriman cepat dan pengemasan sangat aman. Sudah 2 minggu di rumah saya dan tanaman tumbuh dengan baik. Sangat merekomendasikan toko ini!</p>
+                                </div>
+                            </div>
+                            
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar">
+                                            <img src="images/avatar-2.jpg" alt="Avatar">
+                                        </div>
+                                        <div class="reviewer-details">
+                                            <div class="reviewer-name">Siti Rahayu</div>
+                                            <div class="review-date">28 April 2023</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-title">Pot keramik yang cantik</div>
+                                <div class="review-content">
+                                    <p>Monstera-nya bagus dan sehat. Saya sangat menyukai pot keramiknya yang elegan. Satu-satunya masalah kecil adalah ada sedikit kerusakan pada salah satu daun, tapi secara keseluruhan tanaman ini sangat bagus dan mulai beradaptasi dengan baik di rumah saya.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="review-item">
+                                <div class="review-header">
+                                    <div class="reviewer-info">
+                                        <div class="reviewer-avatar">
+                                            <img src="images/avatar-3.jpg" alt="Avatar">
+                                        </div>
+                                        <div class="reviewer-details">
+                                            <div class="reviewer-name">Ahmad Hidayat</div>
+                                            <div class="review-date">15 April 2023</div>
+                                        </div>
+                                    </div>
+                                    <div class="review-rating">
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star"></i>
+                                        <i class="fas fa-star-half-alt"></i>
+                                        <i class="far fa-star"></i>
+                                    </div>
+                                </div>
+                                <div class="review-title">Ukuran lebih kecil dari yang diharapkan</div>
+                                <div class="review-content">
+                                    <p>Tanaman ini sehat dan dalam kondisi baik, tapi ukurannya sedikit lebih kecil dari yang saya harapkan untuk kategori "sedang". Meskipun begitu, tanaman ini tumbuh dengan cepat dan saya senang dengan pembelian ini. Layanan pelanggan sangat responsif ketika saya bertanya tentang perawatan.</p>
+                                </div>
+                            </div>
+                            
+                            <div class="load-more-reviews">
+                                <button class="btn btn-outline">Lihat Lebih Banyak Ulasan</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- Related Products -->
+            <div class="related-products">
+                <h2 class="section-title">Produk Terkait</h2>
+                <div class="products-grid">
+                    <div class="product-card">
+                        <div class="product-badge sale">Sale</div>
+                        <div class="product-image">
+                            <img src="images/snake-plant.jpg" alt="Snake Plant">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Snake Plant</a></h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(18)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current">Rp 95.000</span>
+                                <span class="old">Rp 120.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-badge new">New</div>
+                        <div class="product-image">
+                            <img src="images/fiddle-leaf.jpg" alt="Fiddle Leaf Fig">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Fiddle Leaf Fig</a></h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star-half-alt"></i>
+                                <span>(32)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current">Rp 350.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-image">
+                            <img src="images/pothos.jpg" alt="Golden Pothos">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Golden Pothos</a></h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <span>(27)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current">Rp 85.000</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="product-card">
+                        <div class="product-badge sale">Sale</div>
+                        <div class="product-image">
+                            <img src="images/peace-lily.jpg" alt="Peace Lily">
+                            <div class="product-actions">
+                                <button class="action-btn"><i class="fas fa-shopping-cart"></i></button>
+                                <button class="action-btn"><i class="far fa-heart"></i></button>
+                                <button class="action-btn"><i class="fas fa-eye"></i></button>
+                            </div>
+                        </div>
+                        <div class="product-info">
+                            <h3 class="product-name"><a href="#">Peace Lily</a></h3>
+                            <div class="product-rating">
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="fas fa-star"></i>
+                                <i class="far fa-star"></i>
+                                <span>(15)</span>
+                            </div>
+                            <div class="product-price">
+                                <span class="current">Rp 120.000</span>
+                                <span class="old">Rp 150.000</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <div class="footer-logo">
+                        <img src="images/logo.png" alt="TOKO TANAMAN">
+                    </div>
+                    <p class="footer-about">Toko tanaman hias terpercaya dengan berbagai koleksi tanaman indoor dan outdoor berkualitas.</p>
+                </div>
+                <div>
+                    <h3 class="footer-title">Tautan Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="index.html" class="footer-link">Beranda</a></li>
+                        <li><a href="produk.html" class="footer-link">Produk</a></li>
+                        <li><a href="#" class="footer-link">Tentang Kami</a></li>
+                        <li><a href="#" class="footer-link">Kontak</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Kategori</h3>
+                    <ul class="footer-links">
+                        <li><a href="#" class="footer-link">Tanaman Indoor</a></li>
+                        <li><a href="#" class="footer-link">Tanaman Outdoor</a></li>
+                        <li><a href="#" class="footer-link">Tanaman Gantung</a></li>
+                        <li><a href="#" class="footer-link">Kaktus & Sukulen</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="footer-title">Kontak Kami</h3>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jl. Tanaman Indah No. 123, Jakarta</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-phone"></i>
+                        <span>+62 812-3456-7890</span>
+                    </div>
+                    <div class="footer-contact-item">
+                        <i class="fas fa-envelope"></i>
+                        <span>info@tokotanaman.com</span>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p class="footer-copyright">&copy; 2023 TOKO TANAMAN. All Rights Reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+</html>
